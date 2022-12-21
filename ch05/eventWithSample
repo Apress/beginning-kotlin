@@ -1,0 +1,22 @@
+
+data class Event(val title:String) {
+  var date = Date()
+  var time = ""
+  var attendees = mutableListOf<String>()
+
+  fun create() {
+    print(this)
+  }
+}
+
+fun main(args: Array<String>) {
+
+  val mtg = Event("Management meeting")
+
+  with(mtg) {
+    date = Date(2018,1,1)
+    time = "0900H"
+    attendees.add("Ted")
+
+  }
+}

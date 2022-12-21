@@ -1,0 +1,23 @@
+fun main() {
+
+  val fruits = mutableListOf<String>("Apple")
+  fruits.add("Orange")
+  fruits.add(1, "Banana")
+  fruits.add("Guava")
+
+  val nums = mutableSetOf("one", "two")
+  nums.add("two")
+  nums.add("two")
+
+  val dict = hashMapOf("foo" to 1)
+  dict["bar"] = 2
+
+  fruits.forEach { println(it) }
+  nums.forEach { println(it) }
+
+// for maps
+
+  dict.forEach { println(it) }
+  dict.forEach { t, u -> println("$t | $u") }
+
+}
